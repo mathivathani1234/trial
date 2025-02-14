@@ -1,0 +1,73 @@
+/* Video Background Styles */
+#background1-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Behind other content */
+  }
+body {
+    font-family: 'Arial', sans-serif; /* Improved font stack */
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+    line-height: 1.6; /* Improved line height for readability */
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Increased padding */
+    max-width: 1000px; /* Slightly wider container */
+    margin: 100px auto; /* Added margin top/bottom */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .about-text {
+    flex: 1;
+    padding-right: 10px;
+     /* Increased spacing */
+  }
+  
+  
+  h1 {
+    font-size: 2.5em; /* Larger heading */
+    margin-bottom: 20px; /* Space below heading */
+    color: #2c3e50; /* Darker heading color */
+  }
+  
+  p {
+    font-size: 1.2em; /* Slightly larger paragraph text */
+    margin-bottom: 20px; /* Space between paragraphs */
+  }
+  
+
+  /* Responsive adjustments - make it look good on smaller screens */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: center;
+      padding: 20px;
+    }
+    .about-text {
+      padding-right: 0;
+      margin-bottom: 20px;
+      text-align: center; /* Center text on smaller screens */
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  
+
+  

@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: aqua;
+}
+.links{
+    width:10%;
+    border:1px solid red;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    background-color: red;
+    margin-left: 1300px;
+    
+  
+  }
+  .links a{
+    color:white;
+    font-weight: bold;
+  }
+.cont{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+}
+.cont .certificate{
+    width:60%;
+    height:50%;
+    margin-bottom: 100px;
+    border:1px solid black;
+    background-color: gray;
+}
+.certificate img{
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

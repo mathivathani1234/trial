@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posts</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'postdetailsstyle.css' %} ">
+</head>
+<body>
+    <div class="post-container">
+          <h1>{{postlist.Postname}}</h1>
+          <div class="post-meta">
+            <span class="tag">#{{postlist.tag.names.0}}</span> </div>
+            {% if postlist.travelappphoto %}
+                <img src="{{postlist.travelappphoto.url}}" width="500" height="500">
+            {% endif %}
+            <div class="post-content">
+                <p>{{postlist.contents}}</p>
+            </div>
+   
+    <br>
+    <a href="{% url 'blog' %}" class="back-line">Back to Blog</a>
+    <div class="comments-section">
+        <h2>Comments</h2>
+      <div id="giscus_comment_container">
+        <script src="https://giscus.app/client.js"
+        data-repo="mathivathani1234/travel"
+        data-repo-id="R_kgDONwpz1w"
+        data-category="General"
+        data-category-id="DIC_kwDONwpz184CmZ3j"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+</div>
+</div>
+</body>
+</html>

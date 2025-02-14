@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUTME</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'aboutme.css' %}" >
+</head>
+<body>
+    <video autoplay muted loop id="background1-video">
+        <source src="{% static 'background/background1.mp4' %}" type="video/mp4">
+        <source src="{% static 'background/background1.webm' %}" type="video/webm">  <source src="{% static 'background/background1.ogv' %}" type="video/ogg">  Your browser does not support the video tag.
+    </video>
+    <div class="about-container">
+        <div class="about-text">
+            <div class="link">
+                <a href="{% url 'index' %}">Go Back to HOME</a>
+              </div>
+             <h1>ABOUT ME</h1>
+                 <p>Hi, I'm Mathivathani. I'm an enthusiastic and curious individual with a passion for learning – especially when it comes to Web Development, not only this i am interested in many other things that makes me happy to learn.  I believe in taking my time to truly understand and master a skill, rather than rushing the process.  I'm a firm believer that consistent practice is the key to achieving expertise, and I'm enjoying the journey of building my web development skills at my own pace.
+
+        Currently, I'm focused on expanding my knowledge and practical experience.  I'm excited to be developing this portfolio website using Django, which is a significant step in my web development journey. While I'm a fresher and currently seeking opportunities, I see this time as a valuable chance to learn and grow. I'm happy to dedicate my time to honing my skills and exploring different areas within web development. 
+        
+        Anyone else a beginner at something new?  It's definitely a journey with its share of imperfections! But I'm learning that perfection isn't the goal.  It's about showing up, practicing consistently, and celebrating the small wins. I believe that everyone learns at their own speed, and I embrace the imperfections that come with the learning process. I'm dedicated to putting my full effort into projects that I'm passionate about, and even when I'm not fully invested, I'm always willing to try.
+        
+        I'm eager to connect with other developers and learn from their experiences. I'm open to new opportunities and collaborations, so please feel free to reach out!</p>
+    </div>
+   
+    </div>
+    
+</body>
+</html>

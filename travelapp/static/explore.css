@@ -1,0 +1,36 @@
+/* explore.css */
+/* ... (link styles remain the same) ... */
+
+#explore {
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Arrange videos in a column */
+  align-items: center; /* Center videos horizontally */
+  gap: 20px;
+  max-width: 600px; /* Adjust container width as needed */
+  margin: 0 auto;
+}
+
+.video-wrapper {
+  width: 100%; /* Make video wrapper fill the container width */
+  position: relative; /* For positioning the play button */
+}
+
+.container video {
+  width: 100%; /* Make video fill the wrapper */
+  height: auto;
+  max-width: 100%; /* Ensure video does not exceed container */
+  display: block;
+}
+
+
+
+
+
+
+
+/* ... (rest of styles) ... */

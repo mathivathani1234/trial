@@ -1,0 +1,65 @@
+body{
+    background-color: #ddd;
+}
+.link{
+  width:10%;
+  border:1px solid red;
+  border-radius: 5px;
+  margin-top: 0px;
+  background-color: red;
+  margin-left: 1200px;
+  
+
+}
+.link a{
+  color:white;
+  font-weight: bold;
+}
+
+#projects {
+    padding: 40px;
+    /* Light gray background for the section */
+  }
+  
+  .project {
+    margin-bottom: 30px; /* Space between projects */
+    padding: 20px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: white; /* White background for each project */
+  }
+  
+  .project h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .project p {
+      font-size: 1.1em; /* Slightly larger for better readability */
+      line-height: 1.6; /* Improved line height */
+      margin-bottom: 15px;
+  }
+  
+  .project a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .project {
+      margin-bottom: 20px;
+    }
+    .project h2 {
+      font-size: 1.5em;
+    }
+    .project p {
+      font-size: 1em;
+    }
+  }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTIFICATIONS</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'certificate.css' %}" >
+
+</head>
+<body>
+    <div class="links">
+        <a href="{% url 'index' %}">Go Back to HOME</a>
+      </div>
+    <h1>My Certifications</h1>
+    <div class="cont">
+    <div class="certificate">
+        <img src="{% static 'devops.png' %}" width="800px" height="500px">
+    </div>
+    <div class="certificate">
+        <img src="{% static 'figma.png' %}" width="800px" height="500px">
+
+    </div>
+    <div class="certificate">
+        <img src="{% static 'ml.png' %}" width="800px" height="500px">
+
+    </div>
+</div>
+
+</body>
+</html>

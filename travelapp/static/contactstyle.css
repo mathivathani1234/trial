@@ -1,0 +1,36 @@
+#contactsvideo{
+   position:fixed;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   object-fit: cover;
+   z-index: -1;
+   opacity: 0.8;
+
+}
+body{
+   margin:0 auto;
+   margin-top: 200px;
+   text-align: center;
+    
+}
+.contact{
+   width:50%;
+   margin-bottom: 40px;
+   border:none;
+   border-radius: 5px;
+   background-color: rgba(255, 255, 255, 0.6); /* Slightly less transparent */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+   align-items: center;
+   margin-left: 400px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.contact h1{
+   color:red;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+}

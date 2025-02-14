@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blogstyle.css' %}" >
+</head>
+<body>
+    <h1>A Tool for Personal Growth</h1>
+    <div class="post-list">  {% for list in postlist %}
+        <div class="post-item" onclick="location.href='{% url 'posts' list.pk %}';">
+            <h3>{{list.Postname}}</h3>  <p class="post-meta">Modified: {{list.modifiedDate}}</p>
+        </div>
+        {% endfor %}
+        <br>
+    </div>
+    <br>
+    <br>
+    <a href="{% url 'index' %}">Go Back to HOME</a>
+    
+    
+</body>
+</html>
